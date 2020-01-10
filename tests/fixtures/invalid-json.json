@@ -1,0 +1,12 @@
+{
+    "particles": [
+        {
+            "name": "Fermions",
+            "type": "Elementary particles"
+        },
+        {
+            "name": "Atoms",
+            "type": "Composite particles"
+        },
+    ],
+}

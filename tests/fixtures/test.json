@@ -1,0 +1,25 @@
+{
+    "particles": [
+        {
+            "name": "Fermions",
+            "type": "Elementary particles"
+        },
+        {
+            "name": "Quarks",
+            "type": "Elementary particles"
+        },
+        {
+            "name": "Leptons",
+            "type": "Elementary particles"
+        },
+        {
+            "name": "Hadrons",
+            "type": "Composite particles"
+        },
+        {
+            "name": "Atoms",
+            "type": "Composite particles"
+        }
+    ],
+    "numberOfParticles": 5
+}

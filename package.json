@@ -1,0 +1,48 @@
+{
+  "name": "fixtour",
+  "version": "1.0.1",
+  "description": "A Unitary testing utility used to isolate fixtures and mocks from test cases.",
+  "main": "dist/fixtour.min.js",
+  "scripts": {
+      "build": "webpack",
+      "test": "jest",
+      "test-ci": "jest --config config.json --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+      "prepublish": "yarn build"
+  },
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/enmanuelduran/fixtour.git"
+  },
+  "keywords": [
+      "fixtour",
+      "fixtures",
+      "mocks",
+      "ES6",
+      "Javascript"
+  ],
+  "author": "Enmanuel Durán",
+  "license": "MIT",
+  "bugs": {
+      "url": "https://github.com/enmanuelduran/fixtour/issues"
+  },
+  "homepage": "https://github.com/enmanuelduran/fixtour#readme",
+  "devDependencies": {
+      "@babel/core": "^7.1.2",
+      "@babel/preset-env": "^7.1.0",
+      "babel-jest": "^23.6.0",
+      "babel-loader": "^8.0.4",
+      "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+      "coveralls": "^3.0.2",
+      "jest": "^23.6.0",
+      "webpack": "^4.20.2",
+      "webpack-cli": "^3.1.2"
+  },
+  "jest": {
+      "transform": {
+          "^.+\\.js$": "babel-jest"
+      }
+  },
+  "resolutions": {
+      "babel-core": "7.0.0-bridge.0"
+  }
+}
