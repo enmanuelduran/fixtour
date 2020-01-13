@@ -1,6 +1,6 @@
 {
   "name": "fixtour",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Unitary testing utility used to isolate fixtures and mocks from test cases.",
   "main": "dist/fixtour.min.js",
   "scripts": {
