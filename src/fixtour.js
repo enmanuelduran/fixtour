@@ -16,12 +16,6 @@ function Fixtour(cache = {}) {
         return cache[fileAddress];
     };
 
-    const readFixture = file => {
-        const fileContent = _readFile(file).split(/\n/g);
-
-        return fileContent.map(line => line.replace(/^\s+|\s+$/g, '')).join('');
-    };
-
     const html = file => {
         const content = _readFile(file);
 
@@ -56,7 +50,6 @@ function Fixtour(cache = {}) {
     return Object.freeze({
         html,
         json,
-        readFixture,
         clear,
         clearCache,
         getCachedFixtures

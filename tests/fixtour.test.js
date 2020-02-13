@@ -80,46 +80,4 @@ describe('Fixtour', () => {
             expect(jsonFixture).toThrowError('Not possible to parse JSON file, incorrect format or JSON structure');
         });
     });
-
-    describe('When reading and returning the fixtures as Strings', () => {
-        it('Should read and return the HTML fixture directly as a string', () => {
-            expect(Fixtour.readFixture('tests/fixtures/test.html')).toBe(
-                '<div class="first-class">First Div</div>'+
-                '<div class="second-class">Second Div</div>'+
-                '<div class="third-class">'+
-                    '<div class="nested-class">Nested Div</div>'+
-                '</div>'
-            );
-        });
-
-        it('Should read and return the JSON fixture directly as a string', () => {
-            expect(Fixtour.readFixture('tests/fixtures/test.json')).toEqual(
-                '{' +
-                    '"particles": [' +
-                        '{'+
-                            '"name": "Fermions",' +
-                            '"type": "Elementary particles"' +
-                        '},' +
-                        '{' +
-                            '"name": "Quarks",' +
-                            '"type": "Elementary particles"' +
-                        '},' +
-                        '{' +
-                            '"name": "Leptons",' +
-                            '"type": "Elementary particles"' +
-                        '},' +
-                        '{' +
-                            '"name": "Hadrons",' +
-                            '"type": "Composite particles"' +
-                        '},' +
-                        '{' +
-                            '"name": "Atoms",' +
-                            '"type": "Composite particles"' +
-                        '}' +
-                    '],' +
-                    '"numberOfParticles": 5' +
-                '}'
-            );
-        });
-    });
 });
