@@ -72,12 +72,5 @@ Helpful for debugging, returns a object representing all the cached elements.
 Fixtour.getCachedFixtures();
 ```
 
-### `readFixture()`
-Helpful for reading and returning files contents as strings. It reads a file and removes all the unecessary whitespaces.
-
-```javascript
-Fixtour.readFixture();
-```
-
 
 
